@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build-css": "npx sass scss/styles.css css/main.css --no-source-map",
+        "watch-css": "sass --watch scss/styles.css css/main.css --no-source-map"
+    }
+}
