@@ -24,9 +24,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-lg-3">
+                  <li>
                   <a href="#">
-                     <img src="img/icon-close.svg" id="menu-close" class="img-fluid mx-auto d-none" alt="Close Menu">
+                     <img src="img/icon-close.svg" id="menu-close" class="img-fluid mx-auto" alt="Close Menu">
                   </a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">FEATURES</a>
                   </li>
@@ -37,7 +39,7 @@
                     <a class="nav-link" href="#">CONTACT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn-red" href="#">LOGIN</a>
+                    <a class="nav-link btn-secondary" href="#">LOGIN</a>
                   </li>
                 </ul>
               </div>
@@ -48,7 +50,7 @@
       <section id="segment-1">
         <div class="container p-3 p-lg-5 text-center">
           <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-6 order-1 order-lg-2 text-lg-start">
+            <div class="col-sm-12 col-lg-6 order-1 order-lg-2 text-lg-start" id="hero-image-container">
               <img src="img/illustration-hero.svg" alt="Hero Illustration" class="img-fluid mx-auto" id="hero-image">
             </div>
             <div class="col-sm-12 col-lg-6 order-2 order-lg-1 text-lg-start" id="hero-text">
@@ -87,7 +89,7 @@
           </div>
           <div class="container p-3 p-lg-5 text-center mt-5">
             <div class="row justify-content-between align-items-center">
-              <div class="col-sm-12 col-lg-6 text-lg-start">
+              <div class="col-sm-12 col-lg-6 text-lg-start ">
                 <img src="img/illustration-features-tab-1.svg" id="bannerImage" alt="Features Image" class="mx-auto img-fluid">
             </div>
             <div class="col-lg-6 text-center text-lg-start">
@@ -96,7 +98,7 @@
                 Organize your bookmarks however you like. Our simple drag-and-drop interface
                 gives you complete control over how you manage your favourite sites.
             </p>
-            <button class="btn btn-primary desktop">More Info</button>
+            <button class="btn btn-primary desktop" id="features-btn">More Info</button>
               </div>
             </div>
           </div>
@@ -111,7 +113,7 @@
             </p>
             </div>
             <div class="container">
-              <div class="row flex-lg-row  justify-content-center">
+              <div class="row flex-lg-row justify-content-center mb-5">
 
             <!--Card Chrome-->
 
@@ -155,12 +157,11 @@
               </div>
             </div>
 
-
           </div>
         </div>
         </section>
 
-        <section id="segment-4" class="text-center p-3 p-lg-5">
+        <section id="segment-4" class="text-center justify-content-sm-center align-items-sm-center p-lg-5">
           <div class="container">
             <h3>Frequently Asked Questions</h3>
             <p class="text-secondary">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
@@ -225,26 +226,26 @@
       <h3 class="m-4">Stay up-to-date with what we're doing</h3>
       <form class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 d-flex flex-column flex-lg-row gap-3">
-            <input type="email" class="form-control" placeholder="Enter your email address">
-            <button type="submit" class="btn btn-secondary text-nowrap">Contact Us</button>
+          <div class="col-lg-6 d-flex flex-column flex-lg-row gap-3 align-items-center">
+            <input type="email" class="form-control" placeholder="Enter your email address" required>
+            <button type="submit" id="formulary-btn" class="btn btn-secondary text-nowrap">Contact Us</button>
           </div>
         </div>
       </form>
     </section>
     <nav class="second-navbar text-white py-4">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
-        <a href="#" class="d-flex align-items-center">
-          <img src="img/logo-bookmark.svg" alt="Logo Bookmark" class="logo-navbar2" style="height: 40px;">
+      <div class="container d-flex flex-column flex-md-row align-items-sm-center justify-content-md-between gap-4">
+        <a href="#" class="d-flex"lt="Logo Bookmark" class="logo-navbar2" style="height: 40px;">
+          <img src="img/logo-bookmark.svg" alt="Bookmark Logo" class="img-fluid">
         </a>
         <ul class="nav flex-column flex-md-row align-items-center gap-3 m-0">
           <li class="nav-item"><a class="nav-link text-white" href="#">FEATURES</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#">PRICING</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#">CONTACT</a></li>
         </ul>
-        <div class="d-flex gap-3 justify-content-between">
-          <a href="#"><img src="img/icon-facebook.svg" alt="Facebook" style="width: 24px;"></a>
-          <a href="#"><img src="img/icon-twitter.svg" alt="Twitter" style="width: 24px;"></a>
+        <div class="d-flex gap-3 justify-content-center align-items-md-end">
+          <a href="#"><img src="img/icon-facebook.svg" alt="Facebook" ></a>
+          <a href="#"><img src="img/icon-twitter.svg" alt="Twitter" ></a>
         </div>
   
       </div>
@@ -259,3 +260,4 @@
   ></script>
 </body>
 </html>
+          <img src="img/logo-bookmark.svg" a
