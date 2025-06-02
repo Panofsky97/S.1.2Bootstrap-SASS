@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,17 @@
             <div class="container p-3 p-lg-5 text-center text-lg-start">
               <a class="navbar-brand" href="#">
                  <img src="img/logo-bookmark.svg" class="img-fluid mx-auto" alt="Logo Bookmark"></a>
-              <button id="hamburger-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              <button id="hamburger-btn" class="navbar-toggler" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav" aria-controls="navbarNav"
                       aria-expanded="false" aria-label="Toggle navigation">
-                      <img src="img/icon-hamburger.svg" class="img-fluid mx-auto" alt="Open Menu">
+                <img src="img/icon-hamburger.svg" id="menu-open" class="img-fluid mx-auto" alt="Open Menu">
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-lg-3">
+                  <a href="#">
+                     <img src="img/icon-close.svg" id="menu-close" class="img-fluid mx-auto d-none" alt="Close Menu">
+                  </a>
                   <li class="nav-item">
                     <a class="nav-link" href="#">FEATURES</a>
                   </li>
@@ -39,7 +43,7 @@
               </div>
             </div>
           </nav>
-    </head>
+    </header>
     <main>
       <section id="segment-1">
         <div class="container p-3 p-lg-5 text-center">
@@ -53,7 +57,7 @@
                 A clean and simple interface to organize your favourite websites.
                 Open a new browser tab and see your sites load instantly. Try it for free.
               </p>
-              <div class="d-flex flex-row gap-2 text-lg-start">
+              <div class="d-flex flex-row gap-2 text-lg-start align-items-sm-center">
                 <button class="btn btn-primary text-nowrap">Get it on Chrome</button>
                 <button class="btn btn-grey text-nowrap">Get it on Firefox</button>
               </div>
@@ -120,8 +124,8 @@
                   <img src="img/bg-dots.svg" class="d-block mb-3 mt-3 mx-auto" alt="dots" >
                   <a href="#" class="btn btn-primary">Add & Install Extension</a>
                 </div>
-                </div>
               </div>
+            </div>
   
             <!--Card Firefox-->
   
@@ -135,7 +139,7 @@
                   <a href="#" class="btn btn-primary">Add & Install Extension</a>
                 </div>
               </div>
-             </div>
+            </div>
   
             <!--Card Opera-->
   
@@ -148,119 +152,71 @@
                   <img src="img/bg-dots.svg" class="d-block mb-3 mt-3 mx-auto" alt="dots">
                   <a href="#" class="btn btn-primary">Add & Install Extension</a>
                 </div>
-               </div>
               </div>
             </div>
+
+
           </div>
         </div>
         </section>
 
-        <section id="segment-4">
-          <div class="container p-3 p-lg-5 text-center mt-5">
-            <div class="row align-items-center justify-content-center">
+        <section id="segment-4" class="text-center p-3 p-lg-5">
+          <div class="container">
             <h3>Frequently Asked Questions</h3>
-            <p>
-                Here are some of our FAQs. If you have any other questions you'd like
-                answered please feel free to email us.
-            </p>
-            </div>
-          </div>
-            <section class="ask">
-                <div class="accordion" id="accordionExample1">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-white text-dark text-lg-center" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true"
-                      aria-controls="collapseOne">
-                      What is Bookmark?
-                      <div id="collapseOne" class="accordion-collapse collapse"
-                       aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
-                      </div>
-                     </div>
-                    </button>
-                  </h2>
+            <p class="text-secondary">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+            <div class="accordion p-3 mt-5" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is Bookmark?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-secondary">
+                    Bookmark is a browser extension that allows you to save and organize your favourite websites for easy access.
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> 
-        </section>
-        <section class="ask">
-          <div class="accordion" id="accordionExample2">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button bg-white text-dark text-lg-center" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="true"
-                aria-controls="collapseOne">
-                How can I request a new browser?
-                <div id="collapseTwo" class="accordion-collapse collapse"
-                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How can I request a new browser?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-secondary">
+                    You can install Bookmark by downloading it from the Chrome Web Store, Firefox Add-ons, or Opera Add-ons.
+                  </div>
                 </div>
-               </div>
-              </button>
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </section>
-  <section class="ask">
-    <div class="accordion" id="accordionExample3">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button bg-white text-dark text-lg-center" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="true"
-          aria-controls="collapseOne">
-          Is there a mobile app?
-          <div id="collapseThree" class="accordion-collapse collapse"
-           aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
-          </div>
-          <div class="d-lg-flex justify-content-center mt-3">
-         </div>
-        </button>
-      </h2>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div> 
-  </section>
-  <section class="ask mb-5">
-    <div class="accordion" id="accordionExample4">
-      <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button bg-white text-dark text-lg-center" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseFour" aria-expanded="true"
-          aria-controls="collapseOne">
-          What about other Chromium browsers?
-          <div id="collapseFour" class="accordion-collapse collapse"
-           aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
-          </div>
-         </div>
-        </button>
-      </h2>
-    </div>
-  </div>
-  </div>
-  </div>
-  <div class="text-center">
-   <button class="btn btn-primary mt-5">More Info</button>
-  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is there a mobile app?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-secondary">
+                    Yes, Bookmark is completely free to use with no hidden charges. You can use it to manage your bookmarks without any cost.
+                  </div>
+                </div>
+              </div>
+                  <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                    What about other Chromium browsers?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-secondary">
+                    Currently, Bookmark is available for Chrome, Firefox, and Opera. We are working on expanding to other browsers soon.
+                  </div>
+                </div>
+              </div>
+                    <div class="text-center mt-4">
+                         <button class="btn-primary info-btn">More Info</button>
+                    </div>
+                </div>
         </section>
     </main>
 <footer>
@@ -271,7 +227,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 d-flex flex-column flex-lg-row gap-3">
             <input type="email" class="form-control" placeholder="Enter your email address">
-            <button type="submit" class="btn btn-secondary">Contact Us</button>
+            <button type="submit" class="btn btn-secondary text-nowrap">Contact Us</button>
           </div>
         </div>
       </form>
@@ -293,16 +249,13 @@
   
       </div>
     </nav>
-  
   </footer>
- 
+  <script src="main.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+  ></script>
 </body>
-<script>
-  function changeImages(fileName) {
-    let img = document.querySelector("#bannerImage");
-    img.setAttribute('src', fileName)
-    
-  }
-  
-</script>
 </html>

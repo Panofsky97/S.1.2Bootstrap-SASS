@@ -1,3 +1,29 @@
+:root{
+
+    /*Principales*/
+  --primary:           #5265E1;
+  --secondary:         #FA5959;
+
+     /* Fondos / Lienzo */
+  --color-white:         #FBFCFC;
+  --color-grey-lightest: #BAC3E4;
+  --color-grey-light:    #A8AED6;
+
+  /* Texto */
+  --color-darkest:      #292929;
+  --color-navy:         #2B2F49;
+  --color-grey:         #9FA1AB;
+  --color-grey-dark:    #585A64;
+
+  /* Botones / Destacados */
+  --color-primary:      #5165DA;
+  --color-primary-dark: #3D4996;
+  --color-primary-light:#7A8AE4;
+  --color-secondary:    #4F5CAB;
+  --color-red:          #F75F60;
+}
+
+
 html,head, body,footer{
     margin:0;
     padding:0;
@@ -138,7 +164,15 @@ body {
       } 
       .h3{
         margin-top: 1rem;
-      }  
+      } 
+      
+       .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        padding: 2em 0;
+      }
   }
 
   @media (min-width: 992px){
