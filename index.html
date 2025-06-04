@@ -50,7 +50,8 @@
       <section id="segment-1">
         <div class="container p-3 p-lg-5 text-center">
           <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-6 order-1 order-lg-2 text-lg-start" id="hero-image-container">
+            <div class="col-sm-12 col-lg-6 order-1 order-lg-2 text-lg-start mb-4" id="hero-image-container">
+              <div class="rectangle"></div>
               <img src="img/illustration-hero.svg" alt="Hero Illustration" class="img-fluid mx-auto" id="hero-image">
             </div>
             <div class="col-sm-12 col-lg-6 order-2 order-lg-1 text-lg-start" id="hero-text">
@@ -80,19 +81,20 @@
           </div>
             </div>
           </div>
-          <div class="container features-tabs mt-5">
+          <div class="container features-tabs mt-5" style="position: relative;">
+            <div class="rectangle-2"></div>
             <div class=" d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
               <button class="btn-features" onclick="changeImages('img/illustration-features-tab-1.svg')">Simple Bookmarking</button>
               <button class="btn-features" onclick="changeImages('img/illustration-features-tab-2.svg')">Speedy Searching</button>
               <button class="btn-features" onclick="changeImages('img/illustration-features-tab-3.svg')">Easy Sharing</button>
               </div>
           </div>
-          <div class="container p-3 p-lg-5 text-center mt-5">
+          <div class="container p-3 p-lg-5 text-center mt-5 mb-4">
             <div class="row justify-content-between align-items-center">
               <div class="col-sm-12 col-lg-6 text-lg-start ">
                 <img src="img/illustration-features-tab-1.svg" id="bannerImage" alt="Features Image" class="mx-auto img-fluid">
             </div>
-            <div class="col-lg-6 text-center text-lg-start">
+            <div class="col-lg-6 text-center text-lg-start mt-4">
             <h3 class="mt-5">Bookmark in one click</h3>
             <p class="text-secondary">
                 Organize your bookmarks however you like. Our simple drag-and-drop interface
@@ -104,7 +106,7 @@
           </div>
         </section>
     
-        <section id="segment-3" class="gap-3">
+        <section id="segment-3">
           <div class="container p-3 p-lg-5 text-center">
             <h3>Download the extension</h3>
             <p class="text-secondary">
@@ -112,12 +114,12 @@
                 got a favourite you'd like us to prioritize.
             </p>
             </div>
-            <div class="container">
+            <div class="container" id="cards">
               <div class="row flex-lg-row justify-content-center mb-5">
 
             <!--Card Chrome-->
 
-            <div class="col-sm-12 col-lg-4 d-flex">
+            <div class="col-sm-12 col-lg-4 d-flex mb-4">
               <div class="card text-center h-100 card-step-1">
                 <img src="img/logo-chrome.svg" class="card-img-top mx-auto" alt="Chrome Logo" style="width: 80px;">
                 <div class="card-body">
@@ -131,7 +133,7 @@
   
             <!--Card Firefox-->
   
-            <div class="col-sm-12 col-lg-4 d-flex">
+            <div class="col-sm-12 col-lg-4 d-flex mb-4">
               <div class="card text-center h-100 card-step-2">
                <img src="img/logo-firefox.svg" class="card-img-top mx-auto" alt="Chrome Logo" style="width: 80px;">
                 <div class="card-body">
@@ -145,7 +147,7 @@
   
             <!--Card Opera-->
   
-            <div class="col-sm-12 col-lg-4 d-flex">
+            <div class="col-sm-12 col-lg-4 d-flex mb-4">
               <div class="card text-center h-100 card-step-3">
                 <img src="img/logo-opera.svg" class="card-img-top mx-auto" alt="Chrome Logo" style="width: 80px;">
                 <div class="card-body">
@@ -164,7 +166,7 @@
         <section id="segment-4" class="text-center justify-content-sm-center align-items-sm-center p-lg-5">
           <div class="container">
             <h3>Frequently Asked Questions</h3>
-            <p class="text-secondary">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+            <p class="text-secondary">Here are some of our FAQs. If you have any other questions <br> you'd like answered please feel free to email us.</p>
             <div class="accordion p-3 mt-5" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -233,23 +235,22 @@
         </div>
       </form>
     </section>
-    <nav class="second-navbar text-white py-4">
-      <div class="container d-flex flex-column flex-md-row align-items-sm-center justify-content-md-between gap-4">
-        <a href="#" class="d-flex align-items-sm-center"lt="Logo Bookmark" class="logo-navbar2" style="width: 100%;">
-          <img src="img/logo-bookmark.svg" alt="Bookmark Logo" class="align-items-center">
+    <div class="snd-navbar text-white py-4 align-items-center" id="snd-navbar" style="background-color: #2B2C37;">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between mb-2">
+        <a href="#" class= "align-items-sm-center"lt="Logo Bookmark" class="logo-navbar2">
+          <img src="img/logo2-bookmark.svg" alt="Bookmark Logo" class="align-items-center" id="logo-navbar2">
         </a>
-        <ul class="nav flex-column flex-md-row align-items-center gap-3 m-0">
+        <ul class="nav flex-column flex-md-row gap-3 m-0 align-items-center mt-4 mb-4">
           <li class="nav-item"><a class="nav-link text-white" href="#">FEATURES</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#">PRICING</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#">CONTACT</a></li>
         </ul>
-        <div class="d-flex gap-3 justify-content-center align-items-md-end">
+        <div class="gap-4 d-flex justify-content-center align-items-md-end">
           <a href="#"><img src="img/icon-facebook.svg" alt="Facebook" ></a>
           <a href="#"><img src="img/icon-twitter.svg" alt="Twitter" ></a>
         </div>
-  
       </div>
-    </nav>
+      </div>
   </footer>
   <script src="main.js"></script>
   <script
@@ -260,4 +261,3 @@
   ></script>
 </body>
 </html>
-          <img src="img/logo-bookmark.svg" a

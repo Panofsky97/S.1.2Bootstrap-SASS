@@ -109,7 +109,7 @@ $secondary: #FA5959;
     margin-top: 10%;
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 576px){
     .main{
       margin: 0 !important;
       padding: 0 !important;
@@ -127,6 +127,7 @@ $secondary: #FA5959;
       width: 100%;
       padding: 2em;
       align-items: center;
+      flex-wrap: nowrap;
     }
     .navbar {
         display: flex;
@@ -140,9 +141,10 @@ $secondary: #FA5959;
         padding-top:0%;
         background: white;
       }
-    .logo-navbar2 {
+    #logo-navbar2 {
         display: flex;
         justify-content: center;
+        align-items: center !important;
     }
     .btn-primary-desktop{
         display: none;
@@ -205,6 +207,7 @@ $secondary: #FA5959;
         margin-right: 30%;
         margin-left: 30%;
       }
+      
   }
 
   @media (max-width: 576px) {
